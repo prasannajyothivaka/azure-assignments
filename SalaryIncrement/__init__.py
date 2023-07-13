@@ -4,8 +4,6 @@ import os
 import azure.functions as func
 
 def main(mytimer: func.TimerRequest) -> None:
-    # file = open("salary.txt","w")
-    # file.write("25000")
     salary_file_path = os.path.join(os.getcwd(), 'salary.txt')
 
     # Read the current salary from the file
